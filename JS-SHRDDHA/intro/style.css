@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: teal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 1.2rem;
+  height: 3rem;
+  line-height: 1.6em;
+  --border-bottom-width: 1px;
+  --border-color: rgb(238, 238, 238);
+  --border-style: solid;
+  background-color: rgb(255, 255, 255);
+}
+
+.credit {
+  display: flex;
+  align-items: center;
+}
+
+/* nav-bar media queries */
+@media (width <= 700px) {
+  .credit {
+    display: none;
+  }
+}
+
+@media (width <= 450px) {
+  .techStack {
+    display: none;
+  }
+}
+
+@media (width <= 300px) {
+  h3 {
+    font-size: 13px;
+    font-weight: 900;
+  }
+}

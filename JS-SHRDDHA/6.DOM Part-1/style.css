@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+}
+
+div {
+  margin: 10px 20px;
+}
+
+#heading {
+  color: blue;
+  margin: 10px 20px;
+  background-color: yellow;
+  font-size: 32px;
+}
+
+/* .heading-class {
+  margin: 10px 20px;
+  font-size: 22px;
+} */
+
+.heading-class {
+  margin: 10px 20px;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  margin: 10px 20px;
+}
+
+p {
+  margin: 10px 20px;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  margin: 10px 20px;
+}
+
+button {
+  margin: 10px 20px;
+  border-color: black;
+  background-color: blue;
+  color: black;
+  padding: 8px 18px;
+  border-radius: 5px;
+}
