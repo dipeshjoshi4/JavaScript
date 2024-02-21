@@ -8,4 +8,4 @@
 
 * The algorithim Javascript Question - https://github.com/TheAlgorithms/JavaScript
 
-* the 30 days javascript solutions - https://github.com/Asabeneh/30-Days-Of-JavaScript
+* the 30 days javascript Course - https://github.com/Asabeneh/30-Days-Of-JavaScript
