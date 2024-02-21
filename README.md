@@ -7,3 +7,5 @@
 * javascript Problem & Solutions Algoritham Question - https://github.com/jeantimex/javascript-problems-and-solutions
 
 * The algorithim Javascript Question - https://github.com/TheAlgorithms/JavaScript
+
+* the 30 days javascript solutions - https://github.com/Asabeneh/30-Days-Of-JavaScript
