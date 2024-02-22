@@ -2,6 +2,25 @@
 
 //What is Prime Number ? =>
 
-// git remote add origin https://github.com/dipeshjoshi4/JavaScript.git
-// git branch -M main
-// git push -u origin main
+
+function isPrime(num) {
+  if (num < 2) {
+    return false;
+  } else if (num % 2 == 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+// console.log(isPrime(8)); //flase
+// console.log(isPrime(6)); //false
+// console.log(isPrime(3)); //true
+// console.log(isPrime(7)); //true
+
+let num = 7;
+if (isPrime(num)) {
+  console.log(` the given number ${num} is the prime number`);
+} else {
+  console.log(` the given number ${num} is not the prime number`);
+}
