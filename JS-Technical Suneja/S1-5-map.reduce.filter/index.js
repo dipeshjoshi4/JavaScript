@@ -10,7 +10,7 @@ console.log("MAP-FILTER-REDUCE || HIGHER-ORDER-FUNCTION");
 
 ///INTERVIEW QUESTION--------PRODUCT BASED ------
 //Q1- FOReach,map or filter ka pollyfill likh ke baaato
-//q2-bable kya hai?
+//q2-biable kya hai?
 //q3-transpiler kya hai?
 //q4. write polyfill of filter/map/reduce => polyfill means the actull logic which apply while doing map.filter,reduce
 //q5.using map function in the map function
