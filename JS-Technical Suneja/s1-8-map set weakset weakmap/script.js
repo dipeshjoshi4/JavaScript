@@ -113,7 +113,7 @@ console.log("map set weakset weakmap");
 
 //-------------------------------------------------------------------WeakMap-----------------------------------------------------
 
-let wm = new WeakMap();
+// let wm = new WeakMap();
 
 //you can add anything except object
 //only obj related activity
