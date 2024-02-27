@@ -140,23 +140,23 @@ console.log("Object Prototype In JavaScript");
 
 // make you own constructor prototype
 
-const obj = {
-  name: "Ajay Suneja",
-  getName: function () {
-    return this.name;
-  },
-  getroll: function () {
-    return this.roll;
-  },
-};
+// const obj = {
+//   name: "Ajay Suneja",
+//   getName: function () {
+//     return this.name;
+//   },
+//   getroll: function () {
+//     return this.roll;
+//   },
+// };
 
-function MyPrototype(name,roll) {
-    this.name = name
-    this.roll = roll
-}
-MyPrototype.prototype = obj;
-const objname = new MyPrototype("Priyanka", "21");
+// function MyPrototype(name,roll) {
+//     this.name = name
+//     this.roll = roll
+// }
+// MyPrototype.prototype = obj;
+// const objname = new MyPrototype("Priyanka", "21");
 
-console.log(objname);
-console.log(objname.getName());
-console.log(objname.getroll());
+// console.log(objname);
+// console.log(objname.getName());
+// console.log(objname.getroll());
