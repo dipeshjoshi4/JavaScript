@@ -19,6 +19,41 @@ const calc = (n) => {
   return sum;
 };
 
+//memorization function for better time efficient  for same input
+
+//memoize function use callback /closure/rest oper => we want this kind of result as per input given output answer
+//for that we need in object => {'5':15,'6':21,'7':}
+
+const memoize = (fun) => {
+  let cache = {};
+  return function (...args) {
+    let n = args[0];
+    if (n in cache) {
+      console.log("cache"); //cache se ayega 
+      console.log(cache); //cache main kya ayega
+      return cache[n];
+    }
+    else {
+      console.log("calculating first time")
+      let result = fun(n);
+      cache[n] = result;
+      return result;
+    }
+  }
+};
+
+//first timing calling
 console.time();
-console.log(calc(5));
+const efficient = memoize(calc);
+console.log(efficient(5));
+console.timeEnd();
+
+//second timing calling
+console.time();
+console.log(efficient(5));
+console.timeEnd();
+
+//third timing calling
+console.time();
+console.log(efficient(5));
 console.timeEnd();
