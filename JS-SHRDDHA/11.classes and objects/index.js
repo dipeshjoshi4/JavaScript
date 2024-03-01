@@ -43,68 +43,91 @@
 
 //-------------------------------------------------------------------------------------------------
 // if object and prototype have same method,object's method will be used
-const employee = {
-  calcTax() {
-    console.log("tax rate is 10%");
-  },
-};
-const kunal = {
-  salary: 50000,
-  calcTax() {
-    console.log("tax rate is 20%"); //this will be use
-  },
-};
-kunal.__proto__ = employee;
+// const employee = {
+//   calcTax() {
+//     console.log("tax rate is 10%");
+//   },
+// };
+// const kunal = {
+//   salary: 50000,
+//   calcTax() {
+//     console.log("tax rate is 20%"); //this will be use
+//   },
+// };
+// kunal.__proto__ = employee;
+// console.log(kunal.calcTax()); //tax rate is 20%
 
-//-------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
+// 16:40
+
+//------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
 //classes in javascript
-//- give template of making object
-//class is a program-code template for creating objects
-//those objects will have some state(varibles/properties) & some behaviour (functions) inside it
 
-//whenver we nee same kind of objects we can use of classes and its gives us a template of code
+//give template of making object
+//class is a program-code template for creating objects
+//those objects will have some state(varibles/properties) & some behaviour (functions/Methods) inside it
+//whenver we need same kind of multiple objects we can use of classes and its gives us a template of code
 
 //SYNTAX
 // class MyClass {
-//   properties()
+//   properties()   //constructor()
 //   methods()
 // }
+
+//let myObj = new myClass();
 
 //EXAMPLE
 
 // class ToyotaCar {
+
 //   start() {
 //     console.log("start");
 //   }
+
 //   stop() {
 //     console.log("stop");
 //   }
 
-//   setbrand(brand) {
-//     this.brandName = brand; //----------with this keyword whatever varible is object property  |||| but the other brand is argument of indvidual class function
-//   }
-// }
+//   setBrand(brand) {
+//      this.brandName = brand;
+//    }
+//  }
 
-// you dont have to commit "," here to mention theree is different function in class they will know both are diff function
+// with this keyword brandname is  class object property
+// but the other brand is argument of indvidual class function
+
+// you dont have to write "," .because both function is different in class
 //class and object have difference that class is single template in basis of that we can create many objects
 
 //from class to create an object
+
 //syntax
 // let myObj = new MyClass(),
 
 // let fortuner = new ToyotaCar();
-// fortuner.setbrand("fortuner");
+// fortuner.setBrand("fortuner");
 
 // let lambo = new ToyotaCar();
 // lambo.setbrand("lambergini");
 
-//--------------------------------------------------------------
+
+//benifits of using class templete for creating object
+//we can do multiple same type object /different type object  without defining same function and property
+
+//class is generally we use when in same temple we use multiple projects //EX-BANK SOFTWARE
+
+
+//------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
+
 //CONSTRUCTOR() METHOD IS :
 
-//its a special method and its reserved keyword
-//if its not created in  then automatically invoked by new keyword
+//its a special method in class and its reserved keyword
+//if its not created in  then automatically invoked by new
 //whenevr we define our object to new class --> its invoked by new keyword
-// intializes object
+//ex->let obj = new className() => if there is no constructor js made it
+//main work of construction function is intializes object
 //consturctor have some special pre-defind or customization function to help with the different varients
 
 //SYNTAX
@@ -113,8 +136,8 @@ kunal.__proto__ = employee;
 //   myMethod() {}
 // }
 
-//--------------------------------------
-// we can create custome constructor too
+//bydefault u print ur object constructor was there
+// but we can create our own custome constructor too
 
 // class ToyotaCar {
 //   constructor() {
@@ -133,14 +156,13 @@ kunal.__proto__ = employee;
 // let fortuner = new ToyotaCar();
 // let lambo = new ToyotaCar();
 
-//--------------------------------------------------
-// we can write like this too while create custome constructor too
+//we can give argument too in constructor function just like normal function
 
 // class ToyotaCar {
 //   constructor(brandName, milage) {
 //     this.brandName = brandName;
 //     this.milage = milage;
-//     console.log("print construction");
+//     console.log("constructor calling ");
 //   }
 //   start() {
 //     console.log("start");
@@ -152,13 +174,17 @@ kunal.__proto__ = employee;
 
 // let fortuner = new ToyotaCar("fortuner", 12);
 // console.log(fortuner);
+
+//if u notice whenevr we call object its heading as toyota car because its made from class
+
 // let lexus = new ToyotaCar("lexus", 20); //if we not define argument then undefined
 // console.log(lexus);
 
-//--------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
 //Inheritance in js
 
-//=> inheritance is passing down properties & methods from parent class to child class
+//inheritance is passing down properties & methods from parent class to child class
 
 //class1 => property1,property2,method1(),method2()
 //class2 => class2 extends Parent {  property1,property2,method1(),method2() }
@@ -274,22 +300,22 @@ kunal.__proto__ = employee;
 //2
 //parents class property and method accesing super keyword is use
 //super keyword is used to invoked some method from parent in child
-class Person {
-  constructor(name) {
-    this.species = "homo";
-    this.name = name;
-  }
-  eat() {
-    console.log("eat");
-  }
-}
-class engineer extends Person {
-  constructor(name) {
-    super(name);
-  }
-  work() {
-    super.eat();
-    console.log("work and build something");
-  }
-}
-let engobj = new engineer("dipesh");
+// class Person {
+//   constructor(name) {
+//     this.species = "homo";
+//     this.name = name;
+//   }
+//   eat() {
+//     console.log("eat");
+//   }
+// }
+// class engineer extends Person {
+//   constructor(name) {
+//     super(name);
+//   }
+//   work() {
+//     super.eat();
+//     console.log("work and build something");
+//   }
+// }
+// let engobj = new engineer("dipesh");
