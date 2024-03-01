@@ -196,26 +196,34 @@
 //=> if child & parent have same method,child's method will be used. [Method Overriding]
 
 //EXAMPLE-1
+
 // class parent {
 //   hello() {
 //     console.log("hi hello");
 //   }
 // }
+
 // class child extends parent {}
-// let myObj = new child();
+
+// let myobj = new child();
+
 
 //EXAMPLE-2
+
 // class Person {
 
 //   constructor() {
 //     this.species = "homo";
 //   }
+
 //   eat() {
 //     console.log("eat");
 //   }
+
 //   sleep() {
 //     console.log("sleep");
 //   }
+
 //   work() {
 //     console.log("do nothing");
 //   }
@@ -229,41 +237,55 @@
 
 // let dipeshObj = new engineer();
 
-//---------------------------------------------------------------------------------------
+ //for the constructor objects
+
+// let p1 = new Person();
+// console.log(p1); //Person {species: 'homo'}
+// let e1 = new engineer();
+// console.log(e1);  //engineer {species: 'homo'}
+
+//-------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------
+
 //super Keyword
 // the super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
 
 //EXAMPLE-1
 
 // class Person {
+
 //   constructor() {
 //     console.log("enter parent");
 //     this.species = "homo";
 //   }
+
 //   sleep() {
 //     console.log("sleep");
 //   }
 // }
 
 // class engineer extends Person {
+
 //   constructor(branch) {
 //     console.log("enter child");
-//     super(); //invoked the parent class consturctor or u can say super constructor with super()
+//     super();                               //invoked the parent class consturctor or u can say super constructor with super()
 //     this.branch = branch;
 //     console.log("exit child");
 //   }
+
 //   work() {
 //     console.log("work and build something");
 //   }
+
 // }
 
 // let engobj = new engineer("chemical");
 
 //NOTES =>
 // parent class ---> child class(derived or inherit property) .
-// so before use of "this" or derived consturctor we have to used or invoked super constructore means basically invoked the parent constructor
-
-// to knowing sequences we used to write child / parent
+// so before use of "this" or derived consturctor we have to used or invoked super constructore means basically invoked 
+// the parent constructor
+// suggestions -> to knowing sequences we used to write child / parent
 
 //---------------------------------------------------------------------------------------
 //interview question
