@@ -283,7 +283,7 @@
 
 //NOTES =>
 // parent class ---> child class(derived or inherit property) .
-// so before use of "this" or derived consturctor we have to used or invoked super constructore means basically invoked 
+// so before use of "this" or derived consturctor we have to used or invoked super constructore means basically invoked
 // the parent constructor
 // suggestions -> to knowing sequences we used to write child / parent
 
@@ -341,3 +341,51 @@
 //   }
 // }
 // let engobj = new engineer("dipesh");
+
+
+//Error Hnadling
+
+//try-catch
+
+// try {
+//     ... normal mode
+// } catch(err) {   //err is error object
+//     ...handling eror
+// }
+
+//problem statement
+// let a = 5;
+// let b = 10;
+// console.log(a)
+// console.log(b)
+// console.log(a+b)
+// console.log(a + c)  //eror -
+
+//if this error happend then after that error everycode will be not run.all though the other code part is correct then because of one
+//error code will not run
+//for that we use try and catch block to handle error.which can find error and try to handle the error
+
+// console.log(a+b)
+// console.log(a+b)
+// console.log(a + b)
+
+
+//ANSWER
+
+// let a = 5;
+// let b = 10;
+// console.log(a);
+// console.log(b);
+// console.log(a + b);
+
+// try {
+//     console.log(a+c)
+// } catch (err) {
+//     console.log(err)
+// }
+
+// console.log(a + b);
+// console.log(a + b);
+// console.log(a + b);
+// console.log(a + b);
+// console.log(a + b);
