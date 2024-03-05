@@ -10,17 +10,73 @@ console.log("Fetch API");
 
 // let promise = fetch(url, [options]);
 
-const URL = "https://cat-fact.herokuapp.com/facts";
+// const URL = "https://cat-fact.herokuapp.com/facts";
 
-const getFacts = async () => {
-  console.log("getting Data....");
-  let response = await fetch(URL);
-  console.log(response.status);
-};
+//JSON FORMAT DATA GET with this
+
+// const getFacts = async () => {
+//   console.log("getting Data....");
+//   let response = await fetch(URL);
+//   console.log(response); //JSON
+// };
 
 //most of time when we fecth api used we used get request which work as take data from server give to us...when we dont use option means bydefault its always a get reuest work for us
-//but we coudnt get response as we need => inshort in different format for understanding that we have to understand some terms
+//but we coudnt get response as we need => inshort in different format data we get for understanding that we have to understand some terms
+
+//
 
 //AJAX => is Asynchronous JS & XML
-//JSON => is Javascript object notation
-//json() method => returns a second promise that resolves with the result of parising
+//-> first network request means api reuqest comes in  xml data format but now days xml less or json more driven dataformat resposne comes
+//-> here data format means if u give money to ur friend -> UPI | CASH | NETBANKING => give money(data) but in other format
+//-> so as per dataformat for use we can deal it other way
+//INSHORT => DATA FORMAT CHANGE NOT DATA SO DEAL WITH DATA METHODS ARE DIFFERENT
+
+//JSON => is Javascript object notation || AJAJ => ASYNCRONOUS JS AND JSON || AJAX
+
+// so when api request send response comes in (json) format and we have to convert into js object
+// JSON ====> JS Object
+//json() method
+//=>async method
+//=> returns a second promise that resolves with the result of parising THE response body text as JSON.
+//=>(Input is JSON, Output is JS object)
+
+const URL = "https://cat-fact.herokuapp.com/facts";
+const factPara = document.querySelector("#facts");
+const btn = document.querySelector("#btn");
+
+
+//With Aync-Await
+// const getFacts = async() => {
+//   console.log("getting Data....")
+//   let response = await fetch(URL);
+//   console.log(response);
+//   let data = await response.json()
+//   factPara.innerText = data[0].text;
+// }
+
+//With Promise chaining
+// function getFacts() {
+//   fetch(URL)
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//       factPara.innerText = data[0].text
+//     })
+// }
+
+
+
+// const getFacts = async () => {
+  
+//   console.log("getting data....") //for the proof
+
+//   let response = await fetch(URL); //get promise => got response in json
+//   console.log(response);
+
+//   let data = response.json();      // json => js object
+//   factPara.innerText = data[1].text; //manipulate and print
+// }
+
+btn.addEventListener("click", getFacts);
