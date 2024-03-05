@@ -10,16 +10,6 @@ console.log("Fetch API");
 
 // let promise = fetch(url, [options]);
 
-// const URL = "https://cat-fact.herokuapp.com/facts";
-
-//JSON FORMAT DATA GET with this
-
-// const getFacts = async () => {
-//   console.log("getting Data....");
-//   let response = await fetch(URL);
-//   console.log(response); //JSON
-// };
-
 //most of time when we fecth api used we used get request which work as take data from server give to us...when we dont use option means bydefault its always a get reuest work for us
 //but we coudnt get response as we need => inshort in different format data we get for understanding that we have to understand some terms
 
@@ -45,14 +35,17 @@ const factPara = document.querySelector("#facts");
 const btn = document.querySelector("#btn");
 
 
-//With Aync-Await
-// const getFacts = async() => {
-//   console.log("getting Data....")
-//   let response = await fetch(URL);
+
+//with async await
+
+// const getFacts = async () => {
+//   console.log("getting data...."); //------------for the proof
+//   let response = await fetch(URL); //------------get promise => got response in json
 //   console.log(response);
-//   let data = await response.json()
-//   factPara.innerText = data[0].text;
-// }
+//   let data = await response.json(); //-----------json => js object
+//   factPara.innerText = data[1].text; //----------manipulate and print
+// };
+
 
 //With Promise chaining
 // function getFacts() {
@@ -66,17 +59,5 @@ const btn = document.querySelector("#btn");
 //     })
 // }
 
-
-
-// const getFacts = async () => {
-  
-//   console.log("getting data....") //for the proof
-
-//   let response = await fetch(URL); //get promise => got response in json
-//   console.log(response);
-
-//   let data = response.json();      // json => js object
-//   factPara.innerText = data[1].text; //manipulate and print
-// }
-
 btn.addEventListener("click", getFacts);
+
