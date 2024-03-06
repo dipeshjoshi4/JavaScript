@@ -59,5 +59,22 @@ const btn = document.querySelector("#btn");
 //     })
 // }
 
+
 btn.addEventListener("click", getFacts);
 
+//SOME IMP TOPICS IN API CALLS
+
+//Request and Response
+
+//HTTP Verbs
+//=> some rule of internet || some methods of HTTP => get request, post request, delete request, patch request(chnage in data)
+
+//Response status code
+//-> successfull request = 200
+//-> bad adress => 400
+//-> cleint error => 400-499
+//-> server error => 500-599
+
+//HTTP response headers also contain details about the reponses,such as content type,HTTP status code ETC.
+
+//Question => sending POST request
