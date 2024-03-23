@@ -20,9 +20,6 @@
 - https://github.com/Devinterview-io/html5-interview-questions
 - https://github.com/adwaitya/html5-interview-questions#
 - https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions
-
-# ALL
-
 - https://github.com/DopplerHQ/awesome-interview-questions?tab=readme-ov-file#css
 
 # CSS SOME question list
