@@ -14,6 +14,8 @@
 
 * Frontend Question-Answer List - https://github.com/Abhay5855/Mission-frontend
 
+* recent js interview - https://github.com/Pujarini/JS-prep-101
+
 ## HTML-CSS
 
 - https://gist.github.com/marko-jankovic/22ad55fae467e72d0312
