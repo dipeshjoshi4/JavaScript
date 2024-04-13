@@ -6,6 +6,9 @@
 
 //? Types of Primitive Data types
 
+//primitive => which are the building block of js and data manipulation
+// they directly store value where object store a refernce (mena slocation in the memory)
+
 //? Number: Represents numeric values, including integers and floating-point numbers.
 // Example:
 // var myFavNum = -5;
@@ -191,11 +194,14 @@
 //? NaN stands for "Not a Number" and is returned when a mathematical operation doesn't yield a valid number.
 //? Also, to check whether a value is number or not we can use isNaN() function.
 
-// console.log(isNaN("vinod"));
+// console.log(isNaN("vinod")); //value is not a number is true
+
+
+// //! take example
 // console.log(parseInt("xyz"));
 // console.log(parseInt("@#$"));
 
-// //! NaN === NaN, Why is it false ❓
+// //!     NaN === NaN, Why is it false ❓
 // if (NaN == NaN) {
 //   console.log("both are equal ");
 // } else {
@@ -203,3 +209,5 @@
 // }
 
 //* ========== parseInt & parseFloat End Section ==========
+
+
