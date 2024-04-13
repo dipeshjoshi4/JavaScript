@@ -1,3 +1,3 @@
-var badMemories = null;
-console.log(badMemories);
-console.log(typeof null);
+console.log(true + false); //1
+
+console.log(false + true);  //1
