@@ -2,6 +2,12 @@
 //*  EXPRESSIONS AND OPERATORS Section
 //* ====================================
 
+//5+25 = 30
+//5   =>  operand 
+//25  =>  operand 
+//+   =>  operator
+// 30 =>  expression
+
 //? 1st we will see what is expression means and also what is operand and operator in any expression?
 
 //* Types of Operators in JS
@@ -39,8 +45,8 @@
 
 //? Subtraction (-): Subtracts the right operand from the left operand.
 // Example:
-// var a = 10;
-// var b = 7;
+// var a = 7;
+// var b = 10;
 // var difference = a - b;
 // console.log(difference);
 
@@ -56,14 +62,14 @@
 // var m = 15;
 // var n = 3;
 // var quotient = m / n;
-// console.log(quotient);
+// console.log(quotient); //(vadi in gujrati) quotient
 
 //? Modulus (%): Returns the remainder when the left operand is divided by the right operand.
 // Example:
 // var c = 17;
 // var d = 5;
 // var remainder = c % d;
-// console.log(remainder);
+// console.log(remainder); //(sesh in gujrati) remainder
 
 //* ===================================
 //* Challenge Time
@@ -72,37 +78,49 @@
 //! What will be the Output 🤔💭
 // var result = "hello" / 2 ❓
 // var result = "hello" / 2;
-// console.log(result);
+// console.log(result); //Nan
 
 //* ===================================
 //*  InterView Question
 //* ====================================
 
 //! var result = 0.1 + 0.2 ❓ 🤔💭
+
 // var result = 0.1 + 0.2;
+// console.log(result) //0.30000000000004
 // console.log(result.toFixed(2));
 // when working with floating-point numbers in JavaScript, consider using methods like toFixed() when precise decimal representation is necessary.
 
-// const result = 55 * "hello" ❓
+
+// there is binary cpde which is for 0 and 1 and then are repeting so  for 1 and 0 it will be different otherwise normal addition
+
+// var result1 = 0.3 + 0.2;
+// console.log(result1) //0.5
+
+
+//! var result = 55 * "hello" ❓
+
 // var result = 55 * "hello";
-// console.log(result);
+// console.log(result); //NaN
 
 //* ===================================
 //* 3: String Operators
 //* ====================================
 
-//? There are a few ways to concatenate strings in JavaScript. The most common way is to use the + operator. For example, to concatenate the strings "Hello" and "World", you would use the following code:
+//? There are a few ways to concatenate strings in JavaScript.
+//? The most common way is to use the + operator.For example, to concatenate the strings 
+//? "Hello" and "World", you would use the following code:
 
-// var str1 = "Hello";
-// var str2 = "World ";
-// var str3 = str1 + Str2;
-// console.log(str3);
+var str1 = "Hello ";
+var str2 = "World";
+var str3 = str1 + str2;
+console.log(str3);
 
 //* ===================================
 //*  InterView Question
 //* ====================================
 
-//! console.log("5" + 3);  // Outputs "53" ❓
+//!  console.log("5" + 3);  // Outputs "53" ❓
 
 //* ===================================
 //* 4: comparison operators
@@ -130,6 +148,8 @@
 // Checks if the value on the left is less than the value on the right.
 // Example: 5 < 10 evaluates to true.
 // console.log(5 < 10);
+
+
 
 //? Greater Than or Equal To (>=):
 // Checks if the value on the left is greater than or equal to the value on the right.
@@ -239,15 +259,17 @@
 //! Q: Let say you have a variable score representing a student's exam score. If the score is greater than or equal to 60, the student passes; otherwise, they fail. Use the conditional (ternary) operator to determine the result and store it in a variable called result. Log the result to the console❓
 
 // var score = 99;
-// var result = score >= 60 ? "Pass" : "Fail";
-// console.log(result);
+// let result = score >= 60 ? "passes" : "failed";
+// console.log(result)
 
 //* ===================================
 //*  Combined Interview Questions
 //* ====================================
 
-// console.log(typeof ("5" - 3));
+console.log(typeof ("5" - 3)); //number
 
-// console.log(2 < 12 < 5);
+console.log(2 < 12 < 5); //true
 
-// console.log("20" + 10 + 10);
+//read eveulate left to right => 2<12 = true means 1 and now => 1<5 = false
+
+console.log("20" + 10 + 10); //201010
