@@ -10,9 +10,9 @@
 
 //? Syntax
 // if (condition) {
-//   // Code to be executed if the condition is true
+   // Code to be executed if the condition is true
 // } else {
-//   // Code to be executed if the condition is false
+  // Code to be executed if the condition is false
 // }
 
 //? Let check the temperature
@@ -45,10 +45,11 @@
 //? Extended voting eligibility checker with additional conditions
 
 // Assume the user's age, citizenship status, and registration status as inputs
-// let userAge = 19;
+// let userAge = 18;
 // let isCitizen = true; // Assume true for citizen, false for non-citizen
-// let isRegistered = true; // Assume false for not registered, true for registered
-// //! Check eligibility using if...else statements with multiple conditions
+// let isRegistered = false; // Assume false for not registered, true for registered
+
+//! Check eligibility using if...else statements with multiple conditions
 
 // if (userAge >= 18) {
 //   if (isCitizen) {
@@ -68,43 +69,49 @@
 //* Interview Questions
 //* ===============================
 //! 1: Write a program to check if a number is even or odd.
-var num = "7";
-if (num % 2 === 0) {
-  console.log("Num is even");
-} else {
-  console.log("Num is odd");
-}
+// var num = 8;
+// if (num % 2 === 0) {
+//   console.log("Num is even");
+// } else {
+//   console.log("Num is odd");
+// }
+
+//ternary operator
+// var num = 8;
+// (num % 2 === 0) ? "even number" : "odd number"
 
 //! 2: Write a program to check if a number is prime.
 //todo Prime numbers are numbers that have only 2 factors: 1 and themselves.
+
 //? All prime numbers greater than 2 are odd.
 //? However, not all odd numbers are prime.
 
-var num = 13;
-var isPrime = true;
+// var num = 13;
+// var isPrime = true;
 
-for (var i = 2; i < num; i++) {
-  if (num % i === 0) {
-    isPrime = false;
-    break;
-  }
-}
+// for (var i = 2; i < num; i++) {
+//   if (num % i === 0) {
+//     isPrime = false;
+//     break;
+//   }
+// }
 
-if (isPrime) {
-  console.log("Num is prime");
-} else {
-  console.log("Num is not prime");
-}
+// if (isPrime) {
+//   console.log("Num is prime");
+// } else {
+//   console.log("Num is not prime");
+// }
 
 //! 3: Write a program to check if a number is positive, negative, or zero.
-var num = -10;
-if (num === 0) {
-  console.log("NUm is zero");
-} else if (num > 0) {
-  console.log("NUm is positive ");
-} else {
-  console.log("NUm is negative ");
-}
+
+// var num = -10;
+// if (num < 0) {
+//   console.log("negative")
+// } else if (num > 0) {
+//   console.log("positve")
+// } else {
+//   console.log("num is zero")
+// }
 
 //* ===============================
 //* Switch Statement
@@ -113,40 +120,40 @@ if (num === 0) {
 //? Switch Statement: The switch statement is used to perform different actions based on different conditions.
 //? Syntax:
 // switch (expression) {
+
 //   case value1:
-//     //   Code to be executed if expression === value1
-//     break;
+//   Code to be executed if expression === value1
+//   break;
 
 //   case value2:
-//     //   Code to be executed if expression === value2
-//     break;
-
-//   //  More cases can be added as needed
+//   Code to be executed if expression === value2
+//   break;
 
 //   default:
-//   //  Code to be executed if none of the cases match
+//  Code to be executed if none of the cases match
 // }
 
 //todo let's see the example
 //! Explain how the switch statement works and what will be the output when the variable day is set to different values.
 
-// var day = "Friday";
-
+// var day = "Monday";
 // switch (day) {
+
 //   case "Monday":
-//     console.log("today is monday");
+//     console.log("go to office")
 //     break;
 
-//   case "Friday":
-//     console.log("omg lets have party today");
+//   case "Tuesday":
+//     console.log("got to school")
 //     break;
 
-//   case "Sunday":
-//     console.log("Lets go to movie");
+//   case "sunday":
+//     console.log("class bunk")
 //     break;
 
 //   default:
-//     console.log("no condition match");
+//     console.log("enjoy")
+//     break;
 // }
 
 //?=========================
@@ -159,6 +166,7 @@ if (num === 0) {
 // var a = 5;
 // var b = 10;
 // var result;
+
 // switch (areaOfShapes) {
 //   case "square":
 //     result = a * a;
