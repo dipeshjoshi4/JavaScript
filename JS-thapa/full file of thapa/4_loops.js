@@ -167,25 +167,26 @@
 // var b = 10;
 // var result;
 
+
 // switch (areaOfShapes) {
 //   case "square":
 //     result = a * a;
-//     console.log(result);
+//     console.log(result)
 //     break;
 
-//   case "rectangle":
+//   case "reactangle":
 //     result = a * b;
-//     console.log(result);
+//     console.log(result)
 //     break;
 
 //   case "circle":
 //     var r = 2;
 //     result = 3.142 * (r * r);
-//     console.log(result);
+//     console.log(result)
 //     break;
 
 //   default:
-//     console.log("No shape matches");
+//     console.log("no shape")
 // }
 
 //! Question: Explain the purpose of the code. What is it calculating based on the values of areaOfShapes, a, and b?
@@ -213,7 +214,7 @@
 // ? While Loop: A while loop in JavaScript is a control structure that repeatedly executes a block of code as long as a specified condition remains true. The loop continues iterating while the condition is true, and it terminates when the condition becomes false.
 
 // while (condition) {
-//   // Code to be executed as long as the condition is true
+   // Code to be executed as long as the condition is true
 // }
 
 //* Simple while loop to count from 1 to 10 🧑‍💻
@@ -223,6 +224,12 @@
 //   num++;
 // }
 
+//for
+// for (var i = 1; i <= 10; i++){
+//   console.log(i);
+// }
+
+
 //! practice 🧑‍💻
 //? let's create a table of 5
 // 5*1 = 5
@@ -231,9 +238,8 @@
 
 // var num = 1;
 // while (num <= 10) {
-//   console.log("5 * " + num + " = " + 5 * num);
-//   //   console.log(`5 * ${num} = ${5 * num}`);
-//   num++;
+//    console.log("5 * " + num + " = " + 5 * num); //(` 5 * ${num} = ${5*num}`)
+//    num++
 // }
 
 //* ===============================
@@ -243,7 +249,7 @@
 //? Do...While Loop: A do...while loop in JavaScript is similar to a while loop, but it guarantees that the loop body will be executed at least once before checking the loop condition. The loop continues to execute while the specified condition is true, and it terminates when the condition becomes false.
 
 // Syntax: do {
-//   // Code to be executed at least once
+  // Code to be executed at least once
 // } while (condition);
 
 //* Simple do...while loop to count from 1 to 10 🧑‍💻
@@ -263,7 +269,6 @@
 //? Common Use Cases:
 //? When you want to guarantee the execution of the loop body at least once.
 //? When the number of iterations is not known beforehand, and you want to validate the condition after the first iteration.
-
 //? Example: Validating User Input with a Do...While Loop(user need to write a valid number) 🧑‍💻
 
 // let userInput;
@@ -318,6 +323,13 @@
 //! practice :
 //! Calculate the sum of numbers from 1 to 10 using a for loop 🧑‍💻
 
+
+// var sum = 0;
+// for (var i = 1; i <= 10; i++) {
+//    var sum = sum + i;
+// }
+// console.log(sum);
+
 // var sum = 0;
 // debugger;
 // for (var num = 1; num <= 10; num++) {
@@ -340,14 +352,36 @@
 
 //! Homework ➡️ JavaScript program to print table for given number (8,9,12,15) using for Loop?
 
+// for (var num = 1; num <= 10; num++) {
+//    console.log("8 * " + num + " = " + 8 * num);
+// }
+
+
+// for (var i = 1; i <= 10; i++){
+//    console.log("9 * " + i + " = " + 9 * i);
+// }
+
+// for (var i = 1; i <= 10; i++){
+//    console.log("12 * " + i + " = " + 12 * i);
+// }
+
+// for (var i = 1; i <= 10; i++){
+//    console.log("15 * " + i + " = " + 15 * i);
+// }
+
 //? More Practice
 //!1: program To check if a year is a leap year🧑‍💻
-//? If a year is divisible by 4 and not divisible by 100, or
-//? If a year is divisible by 400,
+//? If a year is divisible by 4 and 400 and not divisible by 100, 
 // then it is a leap year. Otherwise, it is not a leap year.
 
-// var year = 2020;
+// var year = 2024;
+// if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+//    console.log("year,its a leap year")
+// } else {
+//    console.log("year,its not a leap year")
+// }
 
+// var year = 2020;
 // if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
 //   console.log(year, "it's a leap year");
 // } else {
@@ -370,4 +404,13 @@
 //     pattern = pattern + " *";
 //   }
 //   console.log(pattern);
+// }
+
+
+// for (var i = 1; i <= 5; i++) {
+//    var pattern = "";
+//    for (var j = 1; j <= i; j++) {
+//       pattern = pattern + "*";
+//    }
+//    console.log(pattern);
 // }
