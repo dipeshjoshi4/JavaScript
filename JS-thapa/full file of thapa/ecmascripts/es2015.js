@@ -109,7 +109,7 @@
 //! Practice Time
 // console.log("5 * " + num + " = " + 5 * num);
 // let num = 5;
-// console.log(`5 * ${num} = ${5 * num}`);
+// console.log(`5 * ${num} = ${5 * num}`) //5*5 = 25
 
 //? Advantages:
 //? Readability: Template strings make the code more readable, especially for complex string constructions.
@@ -131,23 +131,32 @@
 //! Write a function to find sum of two numbers? What if during function call user only passed one argument?
 
 // function sum(a = 20, myCurClass = 10) {
-//   return a + b;
+//   return a + myCurClass;
 // }
-// console.log(sum());
+// console.log(sum(0, 40));
 
 //* ==========================================
 //*  FAT ARROW FUNCTION
 //* =========================================
 
-//? In ECMAScript 6 (ES6), arrow functions, also known as fat arrow functions, were introduced as a concise way to write anonymous functions.
+//? In ECMAScript 6 (ES6), arrow functions, also known as fat arrow functions, were introduced as a concise way to write 
+//? anonymous functions.
 
+//anoynoums
 // const sum = function (a, b) {
 //   let result = `The sum of ${a} and ${b} is ${a + b}.`;
 //   console.log(result);
 // };
-
 // sum(5, 5);
 
+//fat arrow
+// const sum = (a, b) => {
+//   console.log(`the sum of ${a} and ${b} is ${a + b}`)
+//   console.log(sum)
+// }
+// sum(5, 5)
+
+//one line fat arrow
 // const sum = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}.`);
 // sum(5, 5);
 
@@ -279,12 +288,12 @@ const user = { name: "Vinod", age: 30 };
 // };
 
 //? with rest parameters
-const sum = (a, b, ...numbers) => {
-  //   console.log(typeof numbers);
-  return numbers.reduce((accum, curVal) => (accum = accum + curVal), 0);
-};
+// const sum = (a, b, ...numbers) => {
+//   //   console.log(typeof numbers);
+//   return numbers.reduce((accum, curVal) => (accum = accum + curVal), 0);
+// };
 
-console.log(sum(1, 2, 3, 4));
+// console.log(sum(1, 2, 3, 4));
 
 //TODO NOTE: A function definition can only have one rest parameter, and the rest parameter must be the last parameter in the function definition.
 // function wrong1(...one, ...wrong) {}
