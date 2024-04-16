@@ -4,7 +4,8 @@
 //? In JavaScript, a function is a block of reusable code that performs a specific task or set of tasks. Functions are used to organize code into modular and manageable pieces, promote code reuse, and make programs more readable.
 
 //  3 students at a same time wants to find the sum of two numbers
-// 1st student
+
+// // 1st student
 // var a = 5,
 //   b = 10;
 // var sum1 = a + b;
@@ -67,7 +68,7 @@
 
 // // Calling the function
 // sum();
-// sum();
+
 //* ==============================
 //* Function Parameter:
 //* ==============================
@@ -215,15 +216,15 @@
 //! Reverse a String:
 //! Write a function to reverse a given string without using built-in reverse methods.
 
-const isReverse = (str) => {
-  let reverse = "";
-  for (let char = str.length - 1; char >= 0; char--) {
-    reverse = reverse + str[char];
-  }
-  return reverse;
-};
+// const isReverse = (str) => {
+//   let reverse = "";
+//   for (let char = str.length - 1; char >= 0; char--) {
+//     reverse = reverse + str[char];
+//   }
+//   return reverse;
+// };
 
-console.log(isReverse("vinod thapa"));
+// console.log(isReverse("vinod thapa"));
 
 //! Palindrome Check:
 //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
