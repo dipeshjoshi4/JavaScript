@@ -209,8 +209,41 @@
 //   }
 // };
 
+//! for MY PRACTISE
+
+// const calculator = (num1, num2, operator) => {
+
+//   let result;
+
+//   switch (operator) {
+
+//     case "+":
+//       return num1 + num2;
+
+//     case "-":
+//       return num1 - num2;
+
+//     case "*":
+//       return (num1 * num2);
+
+//     case "/":
+//       if (num2 === 0) {
+//         return "0 is now allwoed"
+//       }
+//       else {
+//         return num1 / num2;
+//       }
+
+//     default: return "there is no operator like this"
+
+//   }
+
+
+// }
+
 // console.log(calculator(5, 2, "+")); // Output: 7
 // console.log(calculator(8, 4, "-")); // Output: 4
+// console.log(calculator(8, 4, "*")); // Output: 32
 // console.log(calculator(10, 0, "/")); // Output: 5
 
 //! Reverse a String:
@@ -223,25 +256,33 @@
 //   }
 //   return reverse;
 // };
-
 // console.log(isReverse("dipesh"));
 
+//! for MY PRACTISE
+// const isReverse = (str) => {
+//   let reverse = "";
+//   for (let char = str.length - 1; char >= 0; char--) {
+//     reverse = reverse + str[char]
+//   }
+//   return reverse
+// }
+// console.log(isReverse("hardik"));
 
 //! Palindrome Check:
 //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
 
 
-const isPalindrome = (str) => {
-  let reverse = "";
-  for (let char = str.length - 1; char >= 0; char--) {
-    reverse = reverse + str[char];
-  }
-    if (str === reverse) {
-      return true;
-    } else {
-      return false;
-    }
-  return str === reverse ? true : false;
-};
+// const isPalindrome = (str) => {
+//   let reverse = "";
+//   for (let char = str.length - 1; char >= 0; char--) {
+//     reverse = reverse + str[char];
+//   }
+//     if (str === reverse) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   return str === reverse ? true : false;
+// };
 
-console.log(isPalindrome("level"));
+// console.log(isPalindrome("level"));

@@ -1,2 +1,8 @@
-console.log(calculator(5, 2, '+')); // Output: 7
-console.log(calculator(8, 4, '-')); // Output: 4
+const isReverse = (str) => {
+  let reverse = "";
+  for (let char = str.length - 1; char >= 0; char--) {
+    reverse = reverse + str[char]
+  }
+  return reverse
+}
+console.log(isReverse("hardik"));
