@@ -24,8 +24,8 @@
 //? Using Array constructor
 
 
-let fruits = new Array("orange", "apple", "banana");
-console.log(fruits);
+// let fruits = new Array("orange", "apple", "banana");
+// console.log(fruits);
 
 //? Using array literal
 
@@ -423,3 +423,7 @@ const numbers = [1, 2, 3, 4, 5];
 // }, 0);
 
 // console.log(totalPrice);
+
+// let x = "HELLO";
+// let y = "WORLD";
+// console.log(x + " " + y)
