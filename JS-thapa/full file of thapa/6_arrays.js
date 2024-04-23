@@ -58,7 +58,7 @@
 //* ============================================
 //?👉 Array Traversal / Iterating Over Arrays
 
-let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
@@ -82,55 +82,79 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 //* The arr.forEach() method calls the provided function once for each element of the array.
 //* The provided function may perform any kind of operation on the elements of the given array.
 
+//? syntax
+
+//Traditional Function
+// arrayname.forEach(callbackfunction(currentvalue,index,array){},thisvalue) 
+
+//fatArrow Function
+// arrayname.forEach( (currentvalue,index,array) => { },thisvalue) 
+
+// fruits.forEach((currEle, index, arr) => {
+//     console.log(`${currEle} ${index}`)      //give a for of and for in loop answer in forEach
+//     console.log(arr);                       ///given array for each iteration
+// })
+
+
 // const myForEachArr = fruits.forEach((curElem, index, arr) => {
 //   return `${curElem} ${index}`;
-//   //   console.log(arr);
 // });
-// console.log(myForEachArr);
+// console.log(myForEachArr); //undefined
 
 // ? 4: map function
 //* map() creates a new array from calling a function for every array element. map() does not change the original array.
 
-// const myMapArr = fruits.map((curElem, index, arr) => {
-//   return ` my fav fruit is ${curElem} `;
-//   //   console.log(arr);
-// });
+//? syntax
 
-// console.log(myMapArr);
-// console.log(fruits);
+//Traditional Function
+// arrayname.forEach(callbackfunction(currentvalue,index,array){},thisvalue) 
+//fatArrow Function
+// arrayname.forEach( (currentvalue,index,array) => { },thisvalue) 
+
+
+// fruits.map((currEle, index, arr) => {
+//     console.log(`${currEle} ${index}`)      //give a for of and for in loop answer in forEach
+//     console.log(arr);                       ///given array for each iteration
+// })
+
+// const myMapArr = fruits.map((curElem, index, arr) => {
+//     return ` my fav fruit is ${curElem}  `;
+// });
+// console.log(myMapArr); //get proper new array answer
+// console.log(fruits); //our old array
 
 //todo Practice Time
+// forEach -  Performs an action on each element
+// map -  Creates a new array with transformed elements
+
 //! write a program to Multiply each element with 2
+
+//WITH FOREACH
 // const numbers = [1, 2, 3, 4, 5];
-// // forEach -  Performs an action on each element
-// // map -  Creates a new array with transformed elements
-
 // numbers.forEach((curElem) => {
-//   console.log(curElem * 2);
-//   //   Performs an action on each element
+//     console.log((curElem * 2));  //Performs an action on each element
 // });
 
+//WITH MAP
+// const numbers = [1, 2, 3, 4, 5];
 // const doubleValue = numbers.map((curElem) => {
-//   return curElem * 2;
-//   //   Creates a new array with transformed elements
+//   return curElem * 2;  //Creates a new array with transformed elements
 // });
-
 // console.log(doubleValue);
 
 //* Key Differences
-//! Return Value:
-//? forEach: It doesn't return a value. The forEach method is used for iterating over the elements of an array and performing a side effect, such as modifying the array or performing a task for each element.
 
+//! Return Value:
+//? forEach: It doesn't return a value. The forEach method is used for iterating over the elements of an array and performing a side effect, 
+//? such as modifying the array or performing a task for each element.
 //? map: It returns a new array containing the results of applying a function to each element in the original array. The original array remains unchanged.
 
 //! Chaining:
 //? forEach: It doesn't return a value, so it cannot be directly chained with other array methods.
-
 //? map: Since it returns a new array, you can chain other array methods after using map.
 
-//* Use Case:
+//! Use Case:
 //? forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.
-
 //? map: Used when you want to create a new array based on the transformation of each element in the original array.
 
 //* ==========================================================================
@@ -144,12 +168,15 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 // console.log(fruits.push("guava"));
 // console.log(fruits);
 // The push() method returns the new length.
+
 //? 2: pop(): Method that removes the last element from an array.
 // console.log(fruits.pop());
 // console.log(fruits);
+
 //? 3: unshift(): Method that adds one or more elements to the beginning of an array.
 // console.log(fruits.unshift("guava"));
 // console.log(fruits);
+
 //? 4: shift(): Method that removes the first element from an array.
 // console.log(fruits.shift());
 // console.log(fruits);
@@ -158,22 +185,51 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 //*  what if, we want to add or remove anywhere in an elements - p2
 //* ==========================================================================
 
-//? The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place
+//? The splice() method of Array instances changes the contents of an array by removing or replacing existing ele. and/or adding new ele. in place
+
+//? it chnages means mutate the original array
 
 //* syntax
+//? splice(where-to-start||| how-many-delete(count) |||which-item-want-to-add)
 //? splice(start, deleteCount, item1, item2, /* …, */ itemN)
+
 // let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(1, 1, "grapes");
+
+//! starting point
+// console.log(fruits.splice()); //[]
+// console.log(fruits.splice(1)); //orange ,bannaa ,mango
+// console.log(fruits.splice(0)); //apple,orange ,bannaa ,mango
+
+//!delete orange-add grapes
+// console.log(fruits.splice(1, 1, "grapes"));
+// console.log(fruits)
+
+//! delte banna and add grapes and lemon then delet grapes and mango
+// console.log(fruits.splice(2, 1, "lemon", "grapes")); //banana
+// console.log(fruits); //apple,orNage,lemon,grapes,mango
+// console.log(fruits.splice(3, 2)); // grapes,mango
+// console.log(fruits); //apple,orange,lemon
+
+
+//! what if you want to add the element at the end
+// let fruits = ["apple", "orange", "banana", "mango"];
+// fruits.splice(3, 1, "lemon");
 // console.log(fruits);
 
-// //! what if you want to add the element at the end
-// fruits.splice(-1, 0, "grapes");
+//! what if you want to add the element at the end
+// let fruits = ["apple", "orange", "banana", "mango"];
 // fruits.splice(1, 0, "grapes");
+// console.log(fruits);
+
+//! without delte anything add 
+// let fruits = ["apple", "orange", "banana", "mango"];
+// fruits.splice(-1, 1, "grapes");
 // console.log(fruits);
 
 //* =========================================
 //*  Searching in an Array
 //* =========================================
+
 //?👉  Searching and Filter in an Array
 
 //? For Search we have - indexOf, lastIndexOf & includes
@@ -374,7 +430,7 @@ const words = ["APPLE", "banana", "cherry", "date"];
 //! 2: Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
 
 // Original array of numbers
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
 // const result = numbers
 //   .map((curElem) => {
