@@ -22,19 +22,15 @@
 //? Arrays in JavaScript can be created using the Array constructor or with array literals (square brackets []).
 
 //? Using Array constructor
-
-
 // let fruits = new Array("orange", "apple", "banana");
 // console.log(fruits);
 
 //? Using array literal
-
 // let fruits = ["apple", "orange", "banana"];
 // console.log(fruits);
 // console.log(fruits[0]);
 
 //? we can also create an empty array
-
 // let arr = [];
 // console.log(arr);
 // console.log(typeof arr);
@@ -62,7 +58,7 @@
 //* ============================================
 //?👉 Array Traversal / Iterating Over Arrays
 
-// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
@@ -72,18 +68,19 @@
 // }
 
 // for (let item = 0; item < fruits.length; item++) {
-//   console.log(fruits[item]);
+//     console.log(fruits[item]);
 // }
 
 //? 2: for in loop
 //* for...in Loop: The for...in loop is used to iterate over the properties (including indices) of an object.
 
 // for (let item in fruits) {
-//   console.log(item);
+//     console.log(item)
 // }
 
 // ? 3: forEach Method
-//* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
+//* The arr.forEach() method calls the provided function once for each element of the array.
+//* The provided function may perform any kind of operation on the elements of the given array.
 
 // const myForEachArr = fruits.forEach((curElem, index, arr) => {
 //   return `${curElem} ${index}`;
@@ -426,4 +423,4 @@ const numbers = [1, 2, 3, 4, 5];
 
 // let x = "HELLO";
 // let y = "WORLD";
-// console.log(x + " " + y)
+// console.log(x + " " + y) // hello world
