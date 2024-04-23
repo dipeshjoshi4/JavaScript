@@ -477,6 +477,20 @@ const words = ["APPLE", "banana", "cherry", "date"];
 
 // console.log(totalPrice);
 
+//some question
+
+//! 1
 // let x = "HELLO";
 // let y = "WORLD";
 // console.log(x + " " + y) // hello world
+
+//! 2
+// let sum = 0;
+// const a = [1, 2, 3];
+
+// a.forEach(getSum);
+// console.log(sum);
+// function getSum(el) {
+//     sum += el;
+// }
+//  //6
