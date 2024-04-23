@@ -1,3 +1,3 @@
-for (let item = 0; item < fruits.length; item++) {
-  console.log(fruits[item]);
+for (let item in fruits) {
+    console.log(item)
 }
