@@ -492,5 +492,4 @@ const words = ["APPLE", "banana", "cherry", "date"];
 // console.log(sum);
 // function getSum(el) {
 //     sum += el;
-// }
-//  //6
+// }        //6
