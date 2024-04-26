@@ -267,22 +267,24 @@
 
 // const months = ["Jan", "march", "April", "June", "July"];
 
-// // 1
-// months.splice(months.length, 0, "Dec");
-// // console.log(months);
+//! 1
+// months.splice(months.length, 0, "dec")
+// console.log(months);
 
-// // 2:
-// // When used to add elements, the splice method returns an empty array ([]).
+//! 2:
+// When used to add elements, the splice method returns an empty array ([]).
 
-// // 3
+
+//! 3
 // const indexToUpdate = months.indexOf("march");
 // months.splice(indexToUpdate, 1, "March");
-// // console.log(months);
-
-// // 4
-// const indexToDelete = months.indexOf("June");
-// months.splice(indexToDelete, 1);
 // console.log(months);
+
+//! 4
+// const indexOfUpdate = months.indexOf("June");
+// months.splice(indexOfUpdate, 1);
+// console.log(months);
+
 
 //* =========================================
 //*  Filter in an Array
@@ -292,24 +294,40 @@
 
 //? 1: find Method: The find method is used to find the first element in an array that satisfies a provided testing function. It returns the first matching element or undefined if no element is found.
 
-// const result = numbers.find((curElem) => {
-//   return curElem > 6;
-// });
+//? not given data in array just a number
 
+// const numbers = [1, 2, 3, 4, 5, 4, 6, 7, 8, 6, 9];
+// const result = numbers.find((currEle) => {
+//     return currEle > 6;
+// })
 // console.log(result);
 
 //? 2: findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+
+//? if the element is satissy the conditions then it will give proper index number otherwise give a -1
+
+//? Example-1
+// const numbers = [1, 2, 3, 4, 5, 4, 6, 7, 8, 6, 9];
+// const result = numbers.findIndex((currEle) => {
+//     return currEle > 2;
+// })
+// console.log(result);
+
+//? Example-2
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// const result = numbers.map((curElem) => curElem * 5);
-// console.log(result);
-// const result2 = result.findIndex((curElem) => {
-//   return curElem > 15;
-// });
-// console.log(result2);
+// const resultMap = numbers.map((currEle) => currEle * 5)
+// console.log(resultMap);
 
-//* 3:  filter Method: The filter method creates a new array with all elements that pass the test implemented by the provided function.
-// syntax:
+// const resultFindIndex = resultMap.findIndex((currEle) => {
+//     return currEle > 25;
+// })
+
+// console.log(resultFindIndex);
+
+//? 3:  filter Method: The filter method creates a new array with all elements that pass the test implemented by the provided function.
+
+//? syntax:
 //? filter(callbackFn)
 //? filter(callbackFn, thisArg)
 
