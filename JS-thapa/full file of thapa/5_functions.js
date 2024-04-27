@@ -86,7 +86,7 @@
 
 //? A function argument is a value that you provide when you call a function. Arguments are passed into a function to fill the parameters defined in the function declaration.
 
-//? syntax:
+//? syntax::
 //? functionName(argument1, argument2, ...);
 
 //! Practice Time
