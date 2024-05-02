@@ -1,8 +1,15 @@
+
+@font-face {
+  font-family: Gilory;
+  src: url(./Gilroy-Bold.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: Gilory;
+    color: #fff;
 }
 
 html,body {
@@ -10,3 +17,13 @@ html,body {
     width:100%;
 }
 
+body{
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 100px;
+}
