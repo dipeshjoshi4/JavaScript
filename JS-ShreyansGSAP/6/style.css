@@ -26,4 +26,10 @@ body{
 
 h1{
     font-size: 100px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+h1 span{
+    display: inline-block;
 }
