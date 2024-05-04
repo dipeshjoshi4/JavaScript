@@ -1,8 +1,13 @@
+@font-face {
+    font-family: gilory;
+    src: url(./Gilroy-Medium.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:gilory;
 }
 
 html,body{
@@ -11,5 +16,78 @@ html,body{
 }
 
 body{
-    background-color: #111;
+    background-color: rgb(255, 255, 255);
+}
+
+section{
+    height:100%;
+    width:100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+}
+
+nav h1 i{
+    rotate: 45deg;
+    display: inline-block;
+    font-size: 40px;
+}
+
+nav h1{
+    font-size: 30px;
+}
+
+.part-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:3vw;
+}
+
+.part-2 button{
+    padding: 10px 20px;
+    border:2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.center{
+    display: flex;
+    height:80%;
+    width:100%;
+    padding: 10px 50px;
+}
+
+.center-part-1{
+    height:100%;
+    width:50%;
+}
+
+.center-part-2{
+    background-color: rgb(2, 116, 247);
+    height:100%;
+    width:50%;
+}
+
+.center-part-1 h1{
+    font-size: 70px;
+}
+
+.center-part-1 p{
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.center-part-1 button{
+    font-size:20px;
+    color: white;
+    background-color: black;
+    border: 2px solif black;
+    border-radius: 10px;
+    padding: 10px 15px;
 }
