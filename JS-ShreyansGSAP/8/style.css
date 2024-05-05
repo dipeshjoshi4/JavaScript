@@ -97,3 +97,13 @@ nav h1{
     position: absolute;
     right:0;
 }
+
+.section1Bottom{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.section1Bottom img {
+    height:80px;
+}
