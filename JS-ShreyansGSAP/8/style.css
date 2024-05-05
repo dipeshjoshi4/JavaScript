@@ -67,27 +67,33 @@ nav h1{
     width:50%;
 }
 
-.center-part-2{
-    background-color: rgb(2, 116, 247);
-    height:100%;
-    width:50%;
-}
-
 .center-part-1 h1{
     font-size: 70px;
 }
 
 .center-part-1 p{
-    padding-top: 40px;
+    margin-top: 50px;
     padding-right: 20px;
-    padding-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .center-part-1 button{
     font-size:20px;
-    color: white;
-    background-color: black;
-    border: 2px solif black;
     border-radius: 10px;
     padding: 10px 15px;
+    color: white;
+    background-color: black;
+}
+
+.center-part-2{
+    background-image: url("https://www.unicuscreatives.in/media/graphics/homepage-megaphone.svg");
+    height:100%;
+    width:50%;
+    position: relative;
+}
+
+.center-part-2 img {
+    height: 100%;
+    position: absolute;
+    right:0;
 }
