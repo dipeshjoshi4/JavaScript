@@ -27,7 +27,7 @@ section{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 40px 50px;
+    padding: 20px 50px;
 }
 
 nav h1 i{
@@ -86,7 +86,7 @@ nav h1{
 }
 
 .center-part-2{
-    background-image: url("https://www.unicuscreatives.in/media/graphics/homepage-megaphone.svg");
+    /* background-image: url("https://www.unicuscreatives.in/media/graphics/homepage-megaphone.svg"); */
     height:100%;
     width:50%;
     position: relative;
@@ -105,11 +105,11 @@ nav h1{
 }
 
 .section1Bottom img {
-    height:80px;
+    height:70px;
 }
 
 .section2 .services{
-  padding-top: 100px;
+  padding-top: 40px;
   padding-bottom: 70px;
   padding-right:60px;
   padding-left:80px;
