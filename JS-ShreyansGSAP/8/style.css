@@ -135,12 +135,13 @@ nav h1{
 }
 
 .container{
-    height:86%;
+    min-height:86vh;
     width:100%;
     padding:10px 60px;
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap:70px;
 }
 
 .elem{

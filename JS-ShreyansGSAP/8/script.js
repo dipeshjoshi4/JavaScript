@@ -43,3 +43,79 @@ tl.from(".section1Bottom img", {
 })
 
 }
+
+
+
+function pageTwoAnimation() {
+
+    var tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".section2",
+            scroller: "body",
+            // markers: true,
+            start: "top 50%",
+            end: "top -60%",
+            scrub: 2,
+        }
+    })
+
+
+    tl2.from(".services", {
+        y: 30,
+        opacity: 0,
+        duration: 0.5
+    })
+
+    // line-1
+    tl2.from(".elem.line1.left", {
+        x: -300,
+        opacity: 0,
+        duration: 1
+    }, "anim")
+    tl2.from(".elem.line1.right", {
+        x: 300,
+        opacity: 0,
+        duration: 1
+    }, "anim")
+
+    // line-2
+    tl2.from(".elem.line2.left", {
+        x: -300,
+        opacity: 0,
+        duration: 1
+    }, "anim2")
+    tl2.from(".elem.line2.right", {
+        x: 300,
+        opacity: 0,
+        duration: 1
+    }, "anim2")
+
+    // line-3
+    tl2.from(".elem.line3.left", {
+        x: -300,
+        opacity: 0,
+        duration: 1
+    }, "anim3")
+    tl2.from(".elem.line3.right", {
+        x: 300,
+        opacity: 0,
+        duration: 1
+    }, "anim3")
+
+    // line-4
+    tl2.from(".elem.line4.left", {
+        x: -300,
+        opacity: 0,
+        duration: 1
+    }, "anim4")
+
+    tl2.from(".elem.line4.right", {
+        x: 300,
+        opacity: 0,
+        duration: 1
+    }, "anim4")
+
+}
+
+pageOneAnimation();
+pageTwoAnimation();
