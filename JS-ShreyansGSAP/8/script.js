@@ -1,3 +1,7 @@
+
+
+function pageOneAnimation() {
+
 var tl = gsap.timeline();
 
 tl.from("nav h1, nav h4, nav button", {
@@ -27,7 +31,8 @@ tl.from(".center-part-1 button", {
 
 tl.from(".center-part-2 img", {
     opacity: 0,
-    duration: 0.5
+    duration: 0.5,
+    x: 200
 }, "-=0.3")
 
 tl.from(".section1Bottom img", {
@@ -36,3 +41,5 @@ tl.from(".section1Bottom img", {
     duration: 0.6,
     stagger:0.15
 })
+
+}
