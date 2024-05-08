@@ -23,6 +23,8 @@
 //   console.log("tv dekhte hai yr");
 // }
 
+//let check
+
 //? We can also use an else if clause to check additional conditions:
 // var temperature = 15;
 // if (temperature >= 30) {
