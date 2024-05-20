@@ -58,11 +58,11 @@ Notes
 
 //----------------------------------------------Object Example rest and spread---------------------------------
 
-const students = {
-  names: "ajay",
-  age: "28",
-  hobbies: ["cricket", "singing"],
-};
+// const students = {
+//   names: "ajay",
+//   age: "28",
+//   hobbies: ["cricket", "singing"],
+// };
 
 //Normal
 /*
