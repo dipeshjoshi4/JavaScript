@@ -3,11 +3,8 @@
 //* =====================================
 
 //! Iterable - object where you can use the for-of loop
-
 //! Array-like object - Any object with length property and use indexes to access items
-
 //! Arrays as Objects:  Arrays in JavaScript are a specific type of object that has numeric keys (indices) and a length property. The indices are automatically maintained, and the length property is automatically updated when you add or remove elements from the array.
-
 //! typeof Operator: The typeof operator in JavaScript returns "object" for both arrays and regular objects.
 
 //* JavaScript Array is a data structure that allows you to store and organize multiple values within a single variable. 
@@ -30,6 +27,13 @@
 // console.log(fruits);
 // console.log(fruits[0]);
 
+//? find the positions in array
+// const persons = ["ram", "hari", "sita", "Bishal", "gita"];
+// console.log(persons[0]); //ram
+// console.log(persons.at(0)) //ram
+// console.log(persons.at(-1)); //gita
+// console.log(persons[-1]); //ERROR
+
 //? we can also create an empty array
 // let arr = [];
 // console.log(arr);
@@ -41,8 +45,8 @@
 
 //?👉 Accessing Elements:  Array elements are accessed using zero-based indices.
 // let fruits = ["apple", "orange", "banana"];
-// console.log(fruits[3]);
-// console.log(fruits["apple"]);
+// console.log(fruits[3]); //Undefined
+// console.log(fruits["apple"]); //undefined
 
 //* ======================================
 //*  Modifying Elements:
