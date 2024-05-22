@@ -251,7 +251,7 @@
 
 //! what if you want to add the element at the end without delete
 // let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(4, 0, "lemon");
+// fruits.splice(fruits.length, 0, "lemon");
 // console.log(fruits);
 
 //! what if you want to add the element at the start without delete
@@ -277,16 +277,27 @@
 // syntax
 // indexOf(searchElement);
 // indexOf(searchElement, fromIndex);
-// console.log(numbers.indexOf(4, 5));
+// console.log(numbers.indexOf(4)); //3
+// console.log(numbers.indexOf(4, 5)); //-1
+// console.log(numbers.indexOf(8, 5)); //8
 
 //? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
 // const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+
 // const result = numbers.indexOf(6);
-// console.log(result);
+// console.log(result); //3
+
 // const result1 = numbers.lastIndexOf(6);
-// console.log(result1);
-// const result = numbers.indexOf(6, 5);
-// console.log(result);
+// console.log(result1); //6
+
+// const result2 = numbers.indexOf(6, 5);
+// console.log(result2);//6
+
+// const result3 = numbers.lastIndexOf(6, 9);
+// console.log(result3);//6
+
+// const result4 = numbers.lastIndexOf(6, 5);
+// console.log(result4)//3
 
 //? 3: The includes method checks whether an array includes a certain element, returning true or false.
 // Syntax
@@ -295,7 +306,9 @@
 
 // const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
 // const result = numbers.includes(5);
-// console.log(result);
+// const result2 = numbers.includes(5, 7);
+// console.log(result); //true
+// console.log(result2); //false
 
 //todo Challenge time
 //? 1: Add Dec at the end of an array?
@@ -310,6 +323,8 @@
 // console.log(months);
 
 //! 2:
+// const z = months.splice()
+// console.log(z)  // => []
 // When used to add elements, the splice method returns an empty array ([]).
 
 
@@ -319,8 +334,8 @@
 // console.log(months);
 
 //! 4
-// const indexOfUpdate = months.indexOf("June");
-// months.splice(indexOfUpdate, 1);
+// const IndexOfDelete = months.indexOf("June");
+// months.splice(IndexOfDelete, 1);
 // console.log(months);
 
 
