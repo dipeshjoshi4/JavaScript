@@ -196,7 +196,7 @@
 //* ========================================================================================================
 
 //? 👉 How to Insert, Add, Replace and Delete Elements in Array(CRUD)
-let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: push(): Method that adds one or more elements to the end of an array.
 // console.log(fruits.push("guava","lichi")); //7
@@ -224,40 +224,44 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 //? it chnages means mutate the original array
 
 //* syntax
-//? splice(where-to-start||| how-many-delete(count) |||which-item-want-to-add)
-//? splice(start, deleteCount, item1, item2, /* …, */ itemN)
+//? splice(start(which index u wanna delete),|| how many element u want delete,|| item1, item2, /* …, */ itemN)
 
 // let fruits = ["apple", "orange", "banana", "mango"];
 
 //! starting point
 // console.log(fruits.splice()); //[]
 // console.log(fruits.splice(1)); //orange ,bannaa ,mango
-// console.log(fruits.splice(0)); //apple,orange ,bannaa ,mango
 
 //!delete orange-add grapes
 // console.log(fruits.splice(1, 1, "grapes"));
 // console.log(fruits)
 
-//! delte banna and add grapes and lemon then delet grapes and mango
-// console.log(fruits.splice(2, 1, "lemon", "grapes")); //banana
-// console.log(fruits); //apple,orNage,lemon,grapes,mango
-// console.log(fruits.splice(3, 2)); // grapes,mango
-// console.log(fruits); //apple,orange,lemon
+//! delte banana and add grapes and lemon then delet grapes and mango
+
+// console.log(fruits.splice(2, 1, "grapes", "lemon"));
+// console.log(fruits)
+// console.log(fruits.splice(3, 2));
+// console.log(fruits)
+
+//banana
+//apple,orNage,lemon,grapes,mango
+// grapes,mango
+//apple,orange,lemon
 
 
-//! what if you want to add the element at the end
+//! what if you want to add the element at the end without delete
 // let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(3, 1, "lemon");
+// fruits.splice(4, 0, "lemon");
 // console.log(fruits);
 
-//! what if you want to add the element at the end
+//! what if you want to add the element at the start without delete
 // let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(1, 0, "grapes");
+// fruits.splice(0, 0, "grapes");
 // console.log(fruits);
 
 //! without delte anything add 
 // let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(-1, 1, "grapes");
+// fruits.splice(4, 0, "grapes");
 // console.log(fruits);
 
 //* =========================================
