@@ -69,7 +69,7 @@
 //* ============================================
 //?👉 Array Traversal / Iterating Over Arrays
 
-let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
@@ -125,7 +125,7 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 // fruits.map((currEle, index, arr) => {
 //     console.log(`${currEle} ${index}`)      //give a for of and for in loop answer in forEach
-//     // console.log(arr);                       ///given array for each iteration
+//     console.log(arr);                       ///given array for each iteration
 // })
 
 // const myMapArr = fruits.map((curElem, index, arr) => {
@@ -137,32 +137,44 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 //! difference between forEach and map function
 
-//? 1
+//? 1- never return value forEach by store in variable
 // - forEach store in variable and then never return the value its return undefined
 // - map function can store in variable and its return value
 
-//? 2
-//- when you want new array then simply just use map function and stor in varables gives new array
+//? 2- return new array by map store in variable
+//- where forEach never return value 
+//- when you want new array then simply just use map function and store in variables and that gives new array
+
+//? 3- also old array will be same in Map
+// -map give new array and not mutated old data
 
 
-//todo Practice Time
+//?--------------------------------------------------------------------------------------------------
+
+//! Practice Time
 // forEach -  Performs an action on each element
 // map -  Creates a new array with transformed elements
 
 //! write a program to Multiply each element with 2
 
-//WITH FOREACH
+//?WITH FOREACH
 // const numbers = [1, 2, 3, 4, 5];
 // numbers.forEach((curElem) => {
 //     console.log((curElem * 2));  //Performs an action on each element
 // });
+//ANSWER => 2 4 6 8 10
 
-//WITH MAP
+//?WITH MAP
 // const numbers = [1, 2, 3, 4, 5];
 // const doubleValue = numbers.map((curElem) => {
 //   return curElem * 2;  //Creates a new array with transformed elements
 // });
 // console.log(doubleValue);
+//ANSWER => [2, 4, 6, 8, 10]
+
+
+//?--------------------------------------------------------------------------------------------------
+
 
 //* Key Differences
 
@@ -179,33 +191,33 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 //? forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.
 //? map: Used when you want to create a new array based on the transformation of each element in the original array.
 
-//* ==========================================================================
+//* ========================================================================================================
 //*  How to Insert, Add, Replace and Delete Elements in Array(CRUD) - p1
-//* ==========================================================================
+//* ========================================================================================================
 
 //? 👉 How to Insert, Add, Replace and Delete Elements in Array(CRUD)
-// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: push(): Method that adds one or more elements to the end of an array.
-// console.log(fruits.push("guava"));
+// console.log(fruits.push("guava","lichi")); //7
 // console.log(fruits);
 // The push() method returns the new length.
 
 //? 2: pop(): Method that removes the last element from an array.
-// console.log(fruits.pop());
-// console.log(fruits);
+// console.log(fruits.pop()); //banana
+// console.log(fruits); 
 
 //? 3: unshift(): Method that adds one or more elements to the beginning of an array.
-// console.log(fruits.unshift("guava"));
+// console.log(fruits.unshift("guava","amrud")); //7
 // console.log(fruits);
 
 //? 4: shift(): Method that removes the first element from an array.
-// console.log(fruits.shift());
+// console.log(fruits.shift()); //apples
 // console.log(fruits);
 
-//* ==========================================================================
+//* ========================================================================================================
 //*  what if, we want to add or remove anywhere in an elements - p2
-//* ==========================================================================
+//* ========================================================================================================
 
 //? The splice() method of Array instances changes the contents of an array by removing or replacing existing ele. and/or adding new ele. in place
 
