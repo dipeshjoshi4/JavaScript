@@ -34,6 +34,13 @@
 // console.log(persons.at(-1)); //gita
 // console.log(persons[-1]); //ERROR
 
+//? length
+// const persons = ["ram", "hari", "sita", "Bishal", "gita"];
+// console.log(persons.length);//5
+
+// const arr = [];
+// console.log(arr.length) //0
+
 //? we can also create an empty array
 // let arr = [];
 // console.log(arr);
@@ -62,13 +69,13 @@
 //* ============================================
 //?👉 Array Traversal / Iterating Over Arrays
 
-// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
 
 // for (let item of fruits) {
-//   console.log(item);
+//     console.log(item);
 // }
 
 // for (let item = 0; item < fruits.length; item++) {
@@ -118,7 +125,7 @@
 
 // fruits.map((currEle, index, arr) => {
 //     console.log(`${currEle} ${index}`)      //give a for of and for in loop answer in forEach
-//     console.log(arr);                       ///given array for each iteration
+//     // console.log(arr);                       ///given array for each iteration
 // })
 
 // const myMapArr = fruits.map((curElem, index, arr) => {
@@ -126,6 +133,17 @@
 // });
 // console.log(myMapArr); //get proper new array answer
 // console.log(fruits); //our old array
+
+
+//! difference between forEach and map function
+
+//? 1
+// - forEach store in variable and then never return the value its return undefined
+// - map function can store in variable and its return value
+
+//? 2
+//- when you want new array then simply just use map function and stor in varables gives new array
+
 
 //todo Practice Time
 // forEach -  Performs an action on each element
