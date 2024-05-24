@@ -392,6 +392,7 @@
 // });
 
 // console.log(result);
+//console.log(typeof(result));
 
 // UseCase: In E-commerce website when we want to Remove or delete any product from addToCart page.
 //! Ex. le'ts say user wants to delete value 6.
