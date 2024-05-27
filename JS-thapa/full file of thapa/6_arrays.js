@@ -311,29 +311,29 @@
 // console.log(result2); //false
 
 //todo Challenge time
-//? 1: Add Dec at the end of an array?
-//? 2: What is the return value of splice method?
-//? 3: Update march to March (update)?
-//? 4: Delete June from an array?
-
 // const months = ["Jan", "march", "April", "June", "July"];
 
-//! 1
-// months.splice(months.length, 0, "dec")
+//! 1  Add Dec at the end of an array?
+//with push add dec at last
+// console.log(months.push("dec"));
 // console.log(months);
 
-//! 2:
+//with splice method
+// months.splice(months.length, 0, "dec");
+// console.log(months);
+
+//! 2: What is the return value of splice method?
 // const z = months.splice()
 // console.log(z)  // => []
 // When used to add elements, the splice method returns an empty array ([]).
 
-
-//! 3
-// const indexToUpdate = months.indexOf("march");
+//! 3: Update march to March (update)?
+// const indexToUpdate = months.indexOf("march")
+// console.log(months); // ["Jan", "march", "April", "June", "July"];
 // months.splice(indexToUpdate, 1, "March");
-// console.log(months);
+// console.log(months); // ["Jan", "March", "April", "June", "July"];
 
-//! 4
+//! 4:Delete June from an array?
 // const IndexOfDelete = months.indexOf("June");
 // months.splice(IndexOfDelete, 1);
 // console.log(months);
