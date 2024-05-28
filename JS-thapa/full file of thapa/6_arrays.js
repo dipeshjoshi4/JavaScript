@@ -353,7 +353,7 @@
 // const result = numbers.find((currEle) => {
 //     return currEle > 6;
 // })
-// console.log(result);
+// console.log(result); //7 -> its value
 
 //? 2: findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
 
@@ -368,29 +368,22 @@
 
 //? Example-2
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 // const resultMap = numbers.map((currEle) => currEle * 5)
 // console.log(resultMap);
-
 // const resultFindIndex = resultMap.findIndex((currEle) => {
 //     return currEle > 25;
 // })
-
 // console.log(resultFindIndex);
 
 //? 3:  filter Method: The filter method creates a new array with all elements that pass the test implemented by the provided function.
-
 //? syntax:
 //? filter(callbackFn)
 //? filter(callbackFn, thisArg)
-//
 
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
 // const result = numbers.filter((curElem) => {
 //   return curElem > 4;
 // });
-
 // console.log(result);
 //console.log(typeof(result));
 
