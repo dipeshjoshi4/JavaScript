@@ -46,6 +46,10 @@
 // console.log(arr);
 // console.log(typeof arr);
 
+let arr2 = []
+console.log(arr2);
+console.log(typeof arr2);
+
 //* ======================================
 //*  Accessing Elements:
 //* =====================================
@@ -366,6 +370,7 @@
 //     return currEle > 2;
 // })
 // console.log(result); // gives the index number which value is greater then 2 so answer index number is 2
+
 
 //? Example-2
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
