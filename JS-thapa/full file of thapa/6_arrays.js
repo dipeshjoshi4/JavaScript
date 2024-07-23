@@ -360,11 +360,12 @@
 //? if the element is satissy the conditions then it will give proper index number otherwise give a -1
 
 //? Example-1
+
 // const numbers = [1, 2, 3, 4, 5, 4, 6, 7, 8, 6, 9];
 // const result = numbers.findIndex((currEle) => {
 //     return currEle > 2;
 // })
-// console.log(result);
+// console.log(result); // gives the index number which value is greater then 2 so answer index number is 2
 
 //? Example-2
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -375,12 +376,14 @@
 // })
 // console.log(resultFindIndex);
 
+//Example-3
+
 //? 3:  filter Method: The filter method creates a new array with all elements that pass the test implemented by the provided function.
 //? syntax:
 //? filter(callbackFn)
 //? filter(callbackFn, thisArg)
 
-// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];;
 // const result = numbers.filter((curElem) => {
 //   return curElem > 4;
 // });
